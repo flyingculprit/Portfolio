@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="about.css"> <!-- Adjust the CSS file path if necessary -->
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="pic.jpg" alt="Surya Nallusamy" style="width: 40px; height: 40px; border-radius: 50%;">
+            &nbsp; &nbsp;Surya Nallusamy
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" id="nav-home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html" id="nav-about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html" id="nav-projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html" id="nav-contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Projects Section -->
+<section class="projects" id="projects">
+    <div class="container text-center animate__animated animate__fadeInUp">
+        <h2>Projects</h2>
+        <p>Here are some of the projects I have worked on:</p>
+        <div class="row">
+            <div class="col-md-4 project-item">
+                <img src="project1.jpg" alt="Project 1" class="img-fluid">
+                <h4>Project 1</h4>
+                <p>Description of Project 1</p>
+            </div>
+            <div class="col-md-4 project-item">
+                <img src="project2.jpg" alt="Project 2" class="img-fluid">
+                <h4>Project 2</h4>
+                <p>Description of Project 2</p>
+            </div>
+            <div class="col-md-4 project-item">
+                <img src="project3.jpg" alt="Project 3" class="img-fluid">
+                <h4>Project 3</h4>
+                <p>Description of Project 3</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer bg-dark text-center text-white py-4">
+    <div class="container">
+        <p>&copy; 2024 Surya Nallusamy. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var path = window.location.pathname.split("/").pop(); // Get the current file name
+        var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+        
+        navLinks.forEach(function(link) {
+            if (link.getAttribute('href') === path) {
+                link.classList.add('active'); // Add the 'active' class to the current link
+            }
+        });
+    });
+</script>
+</body>
+</html>

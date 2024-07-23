@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #1C1C1C; /* Background color matching navbar and footer */
+    color: #f9f9f9; /* Text color for better readability on dark background */
+}
+
+.navbar {
+    background-color: #1C1C1C !important; /* Ensure navbar background color */
+    margin-top: 40px; /* Adjust this value to move the navbar down */
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: normal; /* Set font weight to normal */
+    font-family: Arial, sans-serif; /* Use normal font family */
+    font-size: 18px; /* Reduce the font size */
+
+}
+
+.navbar .nav-link {
+    color: #c0c0c0 !important; /* Dimmed color for navbar links */
+    transition: color 0.3s;
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
+    color: #ae77fa !important; /* Change color on hover */
+}
+
+.navbar-nav .nav-link.active {
+    color: #ae77fa !important; /* Change color when active */
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px; /* Add space between navbar items */
+}
+
+.navbar-brand img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.navbar-toggler {
+    border-color: #ae77fa;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ae77fa' stroke-width='2' d='M5 7h20M5 15h20M5 23h20'/%3E%3C/svg%3E");
+}
+
+.nav-link {
+    color: #ae77fa;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+.what-do-i-do-section {
+    padding: 50px 0;
+    text-align: left; /* Align content to the left */
+}
+
+.section-header {
+    text-align: left; /* Align the section header to the left */
+    margin-bottom: 20px; /* Reduce bottom margin */
+    font-size: 1.5rem; /* Decrease font size */
+}
+
+.section-title {
+    font-size: 1.5rem; /* Reduce the font size of section titles */
+    margin-bottom: 10px;
+    color: #ae77fa;
+}
+
+
+
+.border-line {
+    width: 50px;
+    height: 3px;
+    background-color: #ae77fa;
+    margin: 10 auto;
+}
+
+.service-box {
+    background: #2c2c2c;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+.skills-section {
+    padding: 50px 0;
+}
+
+.skills-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ae77fa;
+}
+
+.skill-bar {
+    margin-bottom: 10px;
+}
+
+.skill-bar span {
+    display: block;
+    font-size: 0.9rem;
+}
+
+.progress {
+    background: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 5px;
+}
+
+.progress-bar {
+    background: #ae77fa;
+    height: 100%;
+}
+
+.stackoverflow-section {
+    padding: 50px 0;
+}
+
+.stackoverflow-section .btn {
+    background-color: #ae77fa;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.education-section {
+    padding: 50px 0;
+}
+
+.education {
+    margin-bottom: 20px;
+}
+
+.experience-section {
+    padding: 50px 0;
+}
+
+.experience {
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #1C1C1C;
+    padding: 20px 0;
+}
+
+.btn-square {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #ae77fa;
+    color: #ae77fa;
+    margin: 0 5px;
+}
+
+.btn-square i {
+    font-size: 18px;
+}
+
+.footer p {
+    margin: 10px 0 0;
+}
+
+@media (max-width: 767px) {
+    .navbar-brand img {
+        width: 30px;
+        height: 30px;
+    }
+}
