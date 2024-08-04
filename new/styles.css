@@ -1,0 +1,291 @@
+/* General styles for sections */
+.about, .skills, .projects, .contact {
+    padding: 80px 0;
+}
+
+.about p, .skills p, .projects p, .contact p {
+    color: #ccc;
+    font-size: 18px;
+}
+
+body {
+    background-color: #1C1C1C;
+    color: #e6e6e6;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #1C1C1C !important;
+    color: #ccc;
+    font-size: 0.7rem; /* Further reduce font size */
+    padding: 5px 0; /* Further decrease padding */
+}
+
+.footer a {
+    color: #fff !important; /* Ensure link text is white */
+    text-decoration: none !important; /* Remove underline */
+}
+
+.footer a:hover {
+    text-decoration: none !important; /* Remove underline on hover */
+}
+
+.footer .btn-primary {
+    background-color: #ae77fa !important;
+    border-color: #ae77fa !important;
+    font-size: 0.9rem !important; /* Further adjust the size of the icons inside the buttons */
+}
+
+.footer .btn-primary:hover {
+    animation: rotateScale 0.5s ease-in-out;
+    background-color: #955fd4 !important;
+    border-color: #955fd4 !important;
+}
+
+.footer .btn-square {
+    align-items: center;
+    animation: bounce 1.5s infinite;
+    background-color: #ae77fa !important; /* Set the background color */
+    border-radius: 50%; /* Keep the circular shape */
+    color: #000000 !important; /* Set the icon color */
+    display: inline-flex;
+    font-size: 0.7rem; /* Further adjust the size of the icons */
+    height: 25px; /* Further adjust the height of the social buttons */
+    justify-content: center;
+    margin: 5px; /* Spacing between buttons */
+    transition: transform 0.3s, background-color 0.3s; /* Smooth transition */
+    width: 25px; /* Further adjust the width of the social buttons */
+}
+
+.footer .btn-square:focus {
+    box-shadow: none; /* Remove the default box-shadow */
+    outline: none; /* Remove the default outline */
+}
+
+/* Hover effect for icons */
+.footer .btn-square:hover {
+    background-color: #000000 !important; /* Change background color on hover */
+    color: #ffffff !important; /* Change icon color on hover */
+    transform: scale(1.1); /* Slightly scale up on hover */
+}
+
+.footer .btn-square i {
+    font-size: 0.9rem !important; /* Further adjust the size of icons inside buttons */
+}
+
+.footer-line {
+    background-color: #58555d; /* Line color */
+    height: 1px; /* Further decrease height of the line */
+    margin-bottom: 5px; /* Space between line and footer content */
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #1c1c1c;
+    height: 100vh;
+    padding: 10px 20px;
+    position: relative;
+    text-align: left; /* Align text to the left for large screens */
+    flex-direction: row; /* Row layout for large screens */
+}
+
+.header img {
+    border: 5px solid #ae77fa;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(174, 119, 250, 0.8); /* Glow effect */
+    max-width: 350px; /* Increased size */
+    transition: transform 0.2s ease; /* Smooth transition */
+    width: 100%; /* Ensure the image fills the container */
+    margin-right: 20px; /* Space between image and content */
+}
+
+/* Content styles */
+.header .header-content {
+    max-width: calc(100% - 370px); /* Ensure content does not exceed available width */
+}
+
+/* Mobile view */
+@media (max-width: 770px) {
+    .header {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        justify-content: flex-start; /* Start content from the top */
+        text-align: left; /* Ensure text is left-aligned */
+    }
+
+    .header img {
+        width: 55%; /* Decrease image size on mobile */
+        max-width: none; /* Remove max-width restriction */
+        margin: 0; /* Remove margin for mobile view */
+        margin-bottom: 20px; /* Space between image and content */
+    }
+
+    .header .header-content {
+        width: 100%; /* Ensure content fills the container */
+        text-align: center; /* Center align text for better appearance */
+    }
+
+    
+
+    .header .title,
+    .header .typed-text,
+    .header .subtitle,
+    .header .description,
+    .header .buttons,
+    .header hr,
+    .header .social-links {
+        margin: 0; /* Remove margins to ensure proper alignment */
+    }
+}
+
+/* Slideshow styles */
+.header .slideshow {
+    height:50px; /* Adjust height based on your needs */
+    margin-bottom: 10px; /* Space between slideshow and title */
+    overflow: hidden;
+    position: relative;
+    width: 100%; /* Ensure slideshow occupies full width */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center the slideshow */
+}
+
+.header .slideshow-text {
+    color: #ae77fa !important; /* Color for the slideshow text */
+    font-family: "Monospace", "Courier New"; /* Slim font family */
+    font-size: 22px;
+    font-weight: 300; /* Slim font weight */
+    opacity: 0;
+    position: absolute;
+    text-align: center; /* Center text alignment */
+    transition: opacity 1s ease-in-out;
+    width: 100%;
+}
+
+@keyframes slideshow {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    25% { opacity: 1; }
+    45% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.header .slideshow .slideshow-text:nth-child(1) { animation: slideshow 8s infinite; }
+.header .slideshow .slideshow-text:nth-child(2) { animation: slideshow 8s infinite 2s; }
+.header .slideshow .slideshow-text:nth-child(3) { animation: slideshow 8s infinite 4s; }
+.header .slideshow .slideshow-text:nth-child(4) { animation: slideshow 8s infinite 6s; }
+
+/* Navbar styles */
+.navbar {
+    background-color: #1C1C1C !important; /* Ensure navbar background color */
+    margin-top: 40px; /* Adjust this value to move the navbar down */
+}
+
+.navbar .nav-link {
+    color: #e6e6e6 !important;
+    margin-right: 15px;
+}
+
+.navbar .nav-link:hover {
+    color: #ae77fa !important;
+}
+
+.navbar .navbar-brand {
+    display: flex;
+    margin-left: auto; /* Move the logo to the right */
+    align-items: center;
+    font-size: 18px;
+}
+
+.navbar .navbar-brand img {
+    margin-right: 10px; /* Adjust spacing between the image and text */
+}
+
+.navbar .nav-item {
+    margin-right: 20px; /* Add space between navbar items */
+}
+
+.navbar .navbar-brand span {
+    color: #e6e6e6;
+    font-size: 18px;
+}
+
+/* Projects styles */
+.projects .project-item {
+    margin: 20px 0;
+}
+
+.projects .project-item img {
+    border: 2px solid #ae77fa;
+    border-radius: 10px;
+    max-width: 100%;
+    transition: all 0.3s ease;
+}
+
+.projects .project-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Skills styles */
+.skills .list-inline-item {
+    background-color: #1c1c1c;
+    border: 2px solid #ae77fa;
+    border-radius: 25px;
+    color: #ae77fa;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+.skills .list-inline-item:hover {
+    background-color: #ae77fa;
+    color: #fff;
+}
+
+/* Social Links styles */
+.social-links {
+    color: #fff; /* White text color */
+    margin-top: 10px;
+}
+
+.social-links a {
+    align-items: center;
+    color: #fff !important; /* White color for Instagram link */
+    display: flex;
+    text-decoration: none !important; /* Remove underline */
+}
+
+.social-links a:hover {
+    color: #fff !important; /* Ensure the color remains white on hover */
+    text-decoration: none !important; /* Remove underline on hover */
+}
+
+/* Keyframes for animations */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes rotateScale {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(360deg) scale(1.1);
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+    
+}
+
+
